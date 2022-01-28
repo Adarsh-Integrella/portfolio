@@ -1,0 +1,35 @@
+:root {
+  --mainFont: Verdana, Geneva, Tahoma, sans-serif;
+  --gradientColor: linear-gradient(20deg, rgb(0, 255, 242), rgb(0, 0, 255)) 10;
+  --webkitGradiantMainHeader: -webkit-linear-gradient(
+    20deg,
+    rgb(0, 255, 242),
+    blue
+  );
+  --headerColor: black;
+  --navBarHoverColor: rgb(0, 204, 255);
+  --navBarTextColor: #fff;
+  --upperBarBackgroundColor: rgb(43, 43, 43);
+  --upperFooterBackgroundColor: rgb(59, 59, 59);
+  --lowerFooterBackgroundColor: rgb(29, 29, 29);
+  --mainAboutmeButtonShadowColor: 0px 10px 15px rgba(0, 238, 255, 0.6);
+  --mainAboutmeButtonBorderColor: blue;
+  --resumeButtonBackgroundColor: blue;
+  --resumeButtonBordercolor: rgb(0, 255, 242);
+  --dotsColorAfterHeader: rgb(124, 124, 124);
+  --aboutMeSectionBackgroundColor: rgb(36, 36, 36);
+  --aboutMeParagraphHeading: white;
+  --aboutMeParagraphTextColor: white;
+  --blogLinearGradientBackground90Degree: linear-gradient(
+    90deg,
+    rgb(0, 255, 242),
+    rgba(0, 0, 255, 0.493)
+  );
+  --blogParagraphColor: white;
+  --gridItemBackground: rgb(209, 209, 209);
+  --capabilitiesNumbersColor: white;
+  --subscribeButtonBackground: blue;
+  --subscribeButtonShadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  --lowerFooterTextColor: white;
+  --upperFooterParagraph: white;
+}
