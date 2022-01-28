@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -68,11 +71,40 @@ body {
   border-color: aqua;
   width: 100%;
 }
+#navBarMobile {
+  display: none;
+  background-color: rgb(0, 255, 255);
+  overflow: auto;
+  text-align: center;
+}
+#navBarMobile ul {
+  display: flex;
+  list-style: none;
+}
+#navBarMobile li {
+  margin: auto;
+}
+#navBarMobile a {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  font-size: 1em;
+  color: black;
+}
 #lowerBar {
   display: none;
   background-color: rgb(43, 43, 43);
   float: right;
   width: 100%;
+}
+.buttonsContainer {
+  display: flex;
+}
+.buttonsContainer form {
+  margin: 2px;
 }
 #lowerBar ul {
   padding: 0;
@@ -107,7 +139,7 @@ body {
 #upperFooter {
   background-color: rgb(59, 59, 59);
   bottom: 0;
-  height: 50px;
+  height: 35vh;
   margin: 0%;
   width: 100%;
   border-top: 3px solid;
@@ -133,10 +165,10 @@ body {
   min-height: 500px;
 }
 .main h1 {
-  line-height: 1.2em;
+  line-height: 1.5em;
   text-align: center;
-  font-size: 3.5em;
-  width: 50%;
+  font-size: 4em;
+  width: 40%;
   margin: 0;
 }
 .text-teal {
@@ -145,8 +177,8 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .aboutme {
-  font-size: 12px;
-  padding: 10px 20px;
+  font-size: 15px;
+  padding: 10px 30px;
   border-radius: 45px;
   cursor: pointer;
   letter-spacing: 2.5px;
@@ -157,7 +189,7 @@ body {
   border-color: blue;
 }
 .resume {
-  font-size: 12px;
+  font-size: 15px;
   background-color: blue;
   color: white;
   padding: 10px 20px;
@@ -176,11 +208,13 @@ body {
   width: 7%;
   border-style: dotted;
   border-width: 8px 0px 0px;
+  margin-bottom: 3%;
+  margin-top: 4%;
 }
-.second {
+#second {
   background-color: rgb(36, 36, 36);
   padding: 10px;
-  min-height: 400px;
+  min-height: 300px;
 }
 .aboutmeHeading {
   color: white;
@@ -195,7 +229,7 @@ body {
   text-align: justify;
   color: white;
 }
-.blog {
+#blog {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -206,7 +240,7 @@ body {
     rgba(0, 0, 255, 0.493)
   );
 }
-.blog p {
+#blog p {
   text-align: center;
   width: 100%;
   margin: 0;
@@ -214,8 +248,171 @@ body {
   font-size: 2.5em;
   font-weight: 900;
 }
-.moveToTop {
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+}
+.gridItem {
+  background-color: rgb(218, 218, 218);
+  margin: 4px;
+  padding: 20px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 5%;
+}
+.numbers {
+  display: block;
+  margin: 10px;
+  color: white;
+  font-size: 5em;
+}
+.headCapabilities {
+  margin: 4%;
+  margin-top: 8%;
+  text-align: center;
+}
+.gridParagraph {
+  font-size: 1.4em;
+}
+#moveToTop {
   position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
   float: right;
-  right: 0;
+  cursor: pointer;
+}
+#emailContainer {
+  text-align: center;
+  height: 300px;
+}
+#emailContainer h1 {
+  line-height: 1em;
+  letter-spacing: 0.07em;
+}
+#emailBox {
+  margin: auto;
+  margin-top: 10%;
+  width: 70%;
+}
+input {
+  width: 400px;
+  height: 60px;
+  border-radius: 20px;
+  margin: 2%;
+}
+.subscribe {
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 45px;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: blue;
+  color: white;
+}
+.socialMediaIcons {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.socialMediaIcons img {
+  cursor: pointer;
+  height: 8vh;
+}
+.socialMediaIcons img:hover {
+  transform: scale(1.1);
+}
+#upperFooter p {
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme,
+  .resume {
+    padding: 3vh 9vh;
+    margin-bottom: 4px;
+  }
+  .aboutme {
+    padding: 3vh 10vh;
+  }
+  .aboutmeParagraph {
+    width: 90%;
+  }
+  #mainHeading {
+    margin-right: 4vh;
+  }
+  #mainParagraph {
+    text-align: center;
+    width: 90%;
+  }
+  input {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    margin: 2%;
+  }
+  #header #navBar {
+    display: none;
+  }
+  #upperFooter {
+    height: 30vh;
+  }
+  #navBarMobile {
+    display: block;
+  }
+  .main h1 {
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 4em;
+    width: 100%;
+    margin-left: 10%;
+  }
+}
+textarea {
+  min-width: 50vh;
+  border-radius: 20px;
+}
+.contactForm {
+  margin: auto;
+  width: 80%;
+  padding: 4%;
+  margin: 4;
+}
+.contactForm h1 {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 400px) {
+  #navBarMobile ul {
+    align-items: center;
+    margin-right: 30px;
+  }
+  #navBarMobile a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* letter-spacing: 0.05em; */
+    display: inline-block;
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+  }
+  .main h1 {
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 4em;
+    width: 100%;
+    margin-left: 10%;
+  }
 }

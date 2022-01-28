@@ -38,58 +38,124 @@
       <a href="#"
         ><img src="./style/images/menu.png" id="closeMenu" alt="menu"
       /></a>
-      <!-- <h1 id="logo">AKM</h1> -->
       <img src="./style/images/logo.png" id="logo" alt="" />
       <nav id="navBar">
         <ul>
-          <li><a href="#">CAPABILTIES</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#capabilties">CAPABILTIES</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="#second">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <div>
+    <nav id="navBarMobile">
+      <ul>
+        <li><a href="#capabilties">CAPABILTIES</a></li>
+        <li><a href="#second">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mainContainer">
       <section class="main">
-        <h1>Howdy! I'm <span class="text-teal">Adarsh</span>.</h1>
-        <p>
+        <h1 id="mainHeading">
+          Howdy! I'm <span class="text-teal">Adarsh</span>.
+        </h1>
+        <p id="mainParagraph">
           I'm a full-stack developer and blogger. Currently working at
           Integrella.
         </p>
         <div class="buttonsContainer">
-          <button class="aboutme">More about me</button>
-          <button class="resume">Download resume</button>
+          <form action="#second">
+            <button class="aboutme">More about me</button>
+          </form>
+          <form
+            action="https://drive.google.com/file/d/1FyJPXswkfWYC28MGSwO4VjuceL-06-sU/view?ts=61f370a7"
+          >
+            <button class="resume">Download resume</button>
+          </form>
         </div>
       </section>
-    </div>
-    <div>
-      <hr class="threeDots" />
-    </div>
+      <div>
+        <hr class="threeDots" />
+      </div>
+      <section id="capabilties">
+        <h1 class="headCapabilities">Capabilities</h1>
+        <div class="gridContainer">
+          <div class="developer gridItem">
+            <h1 class="numbers">01.</h1>
+            <h1>Web design and Development</h1>
+            <p class="gridParagraph">
+              I build structured design and development process to deliver a
+              responsive website that fulfils the vision. I use JavaScript and
+              it's frameworks for building web application.
+            </p>
+          </div>
+          <div class="Blogger gridItem">
+            <h1 class="numbers">02.</h1>
+            <h1>Blogging</h1>
+            <p class="gridParagraph">
+              I have more than three years of experience in tech blogging. I
+              write to expand the horizon of knowledge for me and my readers.
+            </p>
+          </div>
+          <div class="Digital marketing gridItem">
+            <h1 class="numbers">03.</h1>
+            <h1>Digital marketing</h1>
+            <p class="gridParagraph">
+              Online marketing is by product of blogging knowledge. I have
+              reached more than a million people with digital marketing.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="second">
-      <h1 class="aboutmeHeading">About me</h1>
-      <p class="aboutmeParagraph">
-        I was always been a tech nerd with the business mindset. Along with my
-        business studies during graduation I started a technology blog and
-        reached more than a million users. Moving forward I decided to enter in
-        a core technology world and entered in Master of Science in Information
-        Technology course at DA-IICT. I have worked on programming languages
-        like C++, Java, and JavaScript, that was the time where I found my
-        interest in full-stack development. Currently, I am working at
-        Integrella as Junior Software Consultant.
-      </p>
-    </section>
-    <section class="blog">
-      <p>Blogs coming soon.</p>
-    </section>
-    <!-- <img
-      src="./style/images/moveToTop.png"
-      class="moveToTop"
-      alt="move to top"
-    /> -->
-    <section class="capabilties"></section>
+      <section id="second">
+        <h1 class="aboutmeHeading">About me</h1>
+        <div>
+          <hr class="threeDots" />
+        </div>
+        <p class="aboutmeParagraph">
+          I was always been a tech nerd with a business mindset. Along with my
+          business studies during graduation I started a technology blog and
+          reached more than a million users. Moving forward I decided to enter
+          in a core technology world and pursued Master of Science in
+          Information Technology degree from DA-IICT. I have worked on
+          programming languages like C++, Java, and JavaScript, that was the
+          time where I found my interest in full-stack development. Currently, I
+          am working at Integrella as Junior Software Consultant.
+        </p>
+      </section>
+
+      <section id="blog">
+        <p>Blogs coming soon.</p>
+      </section>
+      <img
+        src="./style/images/moveToTop.png"
+        id="moveToTop"
+        alt="move to top"
+      />
+    </div>
+    <div id="emailContainer">
+      <div id="emailBox">
+        <h1>Get my blog directly in your mail box.</h1>
+        <div>
+          <hr class="threeDots" />
+        </div>
+        <input type="text" placeholder="Enter your email" />
+        <button class="subscribe">Subscribe</button>
+      </div>
+    </div>
     <footer>
-      <div id="upperFooter"></div>
+      <div id="upperFooter">
+        <div class="socialMediaIcons">
+          <img src="./style/images/github.png" alt="" />
+          <img src="./style/images/facebook.png" alt="" />
+          <img src="./style/images/instagram.png" alt="" />
+          <p>Website was build as an assignment at Integrella.</p>
+        </div>
+      </div>
       <div id="lowerFooter">
         <p>Copyright &copy; 2022</p>
       </div>
